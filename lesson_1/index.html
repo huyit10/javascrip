@@ -5,14 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML DOM</title>
+    <style>
+        ul {
+            /* display: none; */
+        }
+
+        input: focus~ul {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="heading">HTML DOM</h1>
-    <form action="" id="testForm"></form>
-    <form action="" id="form-2"></form>
-    <form action="" id="form-3"></form>
+    <!-- <a href="https://f8.edu.vn">
+        Hoc lap trinh
+    </a>
+    <br />
+    <a href="https://google.com.vn">
+        Tim kiem
+    </a>
+    <script src="b78-PD&SP.js"></script> -->
+    <!-- 
+    <input placeholder="Tim kiem" />
+    <ul>
+        <li>JVs</li>
+        <li>php</li>
+        <li>golang</li>
+    </ul> -->
+    <div>
+        <button>Click me!</button>
+    </div>
+    <script src="b80-86-formValidation.js">
+        Validator({
+            form: '#form-1',
+            rules: [
+                Validator.isRequired('#fullname'),
+                Validator.isEmail('#email'),
+            ]
+        });
+    </script>
 </body>
-<script src="b66-element.js">    </script>
+
 
 </html>
