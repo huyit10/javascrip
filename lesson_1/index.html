@@ -35,12 +35,13 @@
     <div>
         <button>Click me!</button>
     </div>
-    <script src="b80-86-formValidation.js">
+    <script src="b88-92-Promise.js">
         Validator({
             form: '#form-1',
             rules: [
                 Validator.isRequired('#fullname'),
                 Validator.isEmail('#email'),
+                Validator.minLength('#password'),
             ]
         });
     </script>
