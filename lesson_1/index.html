@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <ul>
+        <li>Huy</li>
+    </ul>
     <!-- <a href="https://f8.edu.vn">
         Hoc lap trinh
     </a>
@@ -35,7 +38,7 @@
     <div>
         <button>Click me!</button>
     </div>
-    <script src="b100-Destructuring.js">
+    <script src="b105-Bem.js">
         Validator({
             form: '#form-1',
             rules: [
@@ -44,6 +47,34 @@
                 Validator.minLength('#password'),
             ]
         });
+    </script>
+    <div class="btn btn--success">Show success</div>
+    <div class="btn--eror--danger">Show eror toast</div>
+    <script>
+        function toast(title = '', message = '',
+            type = 'info',
+            duration = 3000
+        ) {
+            const main = document.getElementById('toast');
+            if (main) {
+
+            }
+        }
+        toast({
+            title: 'Success',
+            message: 'May vi tinh ket noi internet',
+            type: 'error',
+            duration: 3000
+        });
+        function showErrorToast() {
+            toast({
+                title: 'Thất bại !',
+                message: 'Có lỗi xảy ra, vui lòng liên hệ quản trị viên',
+                type: 'error',
+                duration: 3000
+            });
+        }
+
     </script>
 </body>
 
