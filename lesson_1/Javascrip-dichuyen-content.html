@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chuyển đổi xuống</title>
+</head>
+
+<body>
+    <div id="content">
+        <p>bài 1</p>
+        <p>bài 2</p>
+        <p>bài 3</p>
+    </div>
+
+    <script>
+        setInterval(() => {
+            let contentDiv = document.getElementById("content");
+            let firstChild = contentDiv.firstElementChild;
+            contentDiv.appendChild(firstChild); // Di chuyển phần tử đầu tiên xuống cuối cùng
+            console.log("chuyển đổi nội dung");
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
