@@ -10,18 +10,14 @@
 <body>
     <div id="content">
         <p>bài 1</p>
-        <p>bài 2</p>
-        <p>bài 3</p>
+    </div>
+    <div id="content2">
+        <p>bài 50</p>
     </div>
 
-    <script>
-        setInterval(() => {
-            let contentDiv = document.getElementById("content");
-            let firstChild = contentDiv.firstElementChild;
-            contentDiv.appendChild(firstChild); // Di chuyển phần tử đầu tiên xuống cuối cùng
-            console.log("chuyển đổi nội dung");
-        }, 1000);
 
+    <script>
+        document.getElementById("content2").innerHTML = document.getElementById("content").innerHTML;
     </script>
 </body>
 
