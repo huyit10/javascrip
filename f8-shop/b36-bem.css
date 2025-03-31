@@ -1,0 +1,103 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 120px;
+    transition: opacity 0.2s ease;
+}
+
+.btn--size-l {
+    padding: 16px 48px;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.btn+.btn {
+    margin-left: 16px;
+}
+
+.btn--success {
+    background-color: red;
+}
+
+.btn--warn {
+    background-color: green;
+
+}
+
+.btn--danger {
+    background-color: blue;
+
+}
+
+.btn--disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    min-width: 400px;
+    max-width: 450px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 088);
+    animation: slideInLeft ease .3s, fadeOut linear 1s 3s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translate(calc(100% + 32px));
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+
+.toast--success {
+    border-color: green;
+}
+
+.toast__icon {
+    font-size: 24px;
+}
+
+.toast__body {}
+
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__msg {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__close {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
