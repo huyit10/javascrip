@@ -184,36 +184,7 @@
         <p class="copyright">Powered by <a href="">w3.css</a></p>
     </div>
     </div>
-    <script>
-        var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHeight = header.clientHeight;
 
-        // dng/mo mobile menu
-        mobileMenu.onclick = function () {
-            var isClosed = header.clientHeight === headerHeight;
-            if (isClosed) {
-                header.style.height = 'auto';
-            } else {
-                header.style.height = 'null';
-            }
-        }
-
-        //tu dong dong khi chon menu
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        for (var i = 0; i < menuItems.length; i++) {
-            var menuItem = menuItems[i];
-
-            menuItem.onclick = function (event) {
-                var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
-                if (!isParentMenu) {
-                    event.preventDefault();
-                } else {
-                    header.style.height = null;
-                }
-            }
-        }
-    </script>
     <div class="modal">
         <div class="modal-container">
             <div class="modal-close">
@@ -246,7 +217,8 @@
         </div>
     </div>
     </id>
-    <script></script>
+    <script src="/w3_band/main.js"></script>
+
 </body>
 
 </html>

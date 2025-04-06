@@ -1,4 +1,4 @@
-/* Reset CSs */
+/* Reset CSS */
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +20,6 @@ html {
 
 .text-center {
     text-align: center !important;
-
 }
 
 .pull-right {
@@ -42,7 +41,6 @@ html {
     cursor: pointer;
     color: #000;
     background-color: #ccc;
-
 }
 
 .row {
@@ -98,14 +96,16 @@ html {
 
 #nav li {
     display: inline-block;
+    position: relative;
 }
 
-#nav li a {
+#nav>li>a {
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
-    color: #ccc;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 #nav>li:hover>a {
@@ -113,14 +113,25 @@ html {
     background-color: #ccc;
 }
 
-#nav__subnav {
-    list-style-type: none;
+#nav .subnav {
+    list-style: none;
+    min-width: 160px;
+    top: 100%;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav li:hover .subnav {
+    display: block;
 }
 
 #nav .subnav a {
     color: #000;
     padding: 0 16px;
     line-height: 38px;
+    display: block;
 }
 
 #nav .nav-arrow-dow {
@@ -140,20 +151,17 @@ html {
     padding: 0 21px;
 }
 
-
 #header .search-btn:hover {
     cursor: pointer;
     background-color: #f44336;
 }
 
 #header .mobile-menu-btn:hover {
-
     background-color: #ccc;
 }
 
 #header .mobile-menu-btn:hover .menu-icon {
     color: #000;
-    background-color: #ccc;
 }
 
 #header .menu-icon,
@@ -190,29 +198,12 @@ html {
     margin-top: 25px;
 }
 
-#content {}
-
 #content .content-section {
     width: 800px;
     max-width: 100%;
-    padding: 64px 0 112px;
+    padding: 64px 16px 112px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-#content .section-heading {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 500;
-    letter-spacing: 4px;
-}
-
-#content .section-sub-heading {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 25px;
 }
 
 #content .section-heading,
@@ -249,38 +240,7 @@ html {
     border-radius: 4px;
 }
 
-#nav li {
-    position: relative;
-}
-
-#nav>li>a {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-#nav li:hover .subnav {
-    display: block;
-}
-
-
-#nav .subnav {
-    min-width: 160px;
-    top: 100%;
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-
-
-
-
-#content {}
-
-#footer {}
-
-/* tour section */
+/* Tour section */
 #tour-section {
     background-color: #000;
 }
@@ -297,11 +257,7 @@ html {
     font-size: 15px;
 }
 
-.tickets-list .sold-out {}
-
-.tickets-list .quantity {}
-
-/* places */
+/* Places */
 .place-list {
     margin-top: 16px;
 }
@@ -336,6 +292,7 @@ html {
     line-height: 1.4;
 }
 
+/* Contact */
 .contact-content {
     margin-top: 48px;
 }
@@ -345,7 +302,7 @@ html {
     line-height: 1.5;
 }
 
-.contact-info i [class*="ti-"] {
+.contact-info i[class*="ti-"] {
     width: 30px;
 }
 
@@ -373,7 +330,7 @@ html {
     width: 100%;
 }
 
-/* fouter section */
+/* Footer */
 #footer {
     padding: 64px 16px;
     text-align: center;
@@ -388,8 +345,8 @@ html {
     text-decoration: none;
 }
 
-#footer .copyright a:hover,
-#footer .socials-list a:hover {
+#footer .socials-list a:hover,
+#footer .copyright a:hover {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -402,6 +359,7 @@ html {
     color: rgba(0, 0, 0, 0.6);
 }
 
+/* Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -488,5 +446,3 @@ html {
     text-align: right;
     color: #2196F3;
 }
-
-.modal-footer a {}
