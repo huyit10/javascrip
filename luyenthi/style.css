@@ -1,0 +1,4 @@
+.collapse navbar-collapse {
+    height: 120px;
+    background-image: linear-gradient(0, #339cfe, #52b9e9);
+}
