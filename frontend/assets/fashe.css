@@ -1,0 +1,306 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header__navbar {
+    position: relative;
+    list-style: none;
+    background-color: #e3efea;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+
+.header__navbar-item1 {
+    font-size: 30px;
+    margin-left: 40px;
+
+}
+
+.header__navbar2 {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    /* 3 cột trái - giữa - phải */
+    align-items: center;
+}
+
+.header__navbar-list2 {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    /* Tạo khoảng cách giữa các mục */
+    align-items: center;
+}
+
+/* ===== banner SECTION ===== */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.banner-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ảnh không bị méo */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.banner-subtitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.banner-btn {
+    padding: 10px 25px;
+    background-color: white;
+    color: rgb(47, 42, 42);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* ===== CATEGORY SECTION ===== */
+.grid-category {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 150px 10px 150px;
+}
+
+.grid-category>div {
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px;
+    font-size: 5px;
+    text-align: center;
+
+}
+
+.grid-category .item6 {
+    padding: 70px;
+}
+
+.category-btn {
+    position: absolute;
+    margin: 150px 0px 0px 70px;
+}
+
+/* ===== FEATURED PRODUCTS ===== */
+.grid-featured {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 150px 10px 150px;
+}
+
+.grid-featured>div {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* ===== LOOKBOOK SECTION ===== */
+
+.lookbook {
+    display: flex;
+    background-color: rgb(200, 206, 213);
+    justify-content: center;
+    height: 300px;
+    gap: 40px;
+
+}
+
+.lookbook>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    float: left;
+
+}
+
+.lookbook-one>h3 {
+    position: absolute;
+    margin: 50px 3px 5px 40px;
+    color: white;
+}
+
+.lookbook-text {
+    opacity: 0.5;
+    position: absolute;
+}
+
+.lookbook-one>h2 {
+    position: absolute;
+    margin: 180px 10px 5px 0px;
+    color: white;
+
+}
+
+/* =====  OUR BLOG  ===== */
+.grid-blog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+}
+
+.grid-blog>div {
+    color: rgb(101, 75, 75);
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.grid-blog img {
+    margin: 10px 150px 10px 150px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+/* ===== INSTAGRAM SECTION ===== */
+.flex-instagram {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: white;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex-instagram>div {
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 30%;
+    margin: 1px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.intstagram-h1 {
+    text-align: center;
+}
+
+/* ===== SERVICE HIGHLIGHTS ===== */
+.newspapers {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    margin-top: 30px;
+    border-top: 1px solid rgb(214, 222, 233);
+    padding: 20px;
+}
+
+.newspaper {
+    flex: 1;
+    padding: 0 10px;
+    border-left: 1px solid rgb(127, 141, 146);
+}
+
+
+.newspaper:first-child {
+    border-left: none;
+    /* bo vien ben trai */
+}
+
+
+.footer {
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 1px;
+
+}
+
+.footer>div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 20px;
+    /* text-align: left; */
+}
+
+.btn-footer {
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.footer_it1 {
+    text-align: left;
+}
+
+.footer__help {
+    text-align: left;
+}
+
+.footer__icon-bottom {
+    text-align: center;
+    list-style: none;
+}
+
+.item77 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.footer__icon {
+    gap: 10px;
+    list-style: none;
+}
+
+.footer>footer__categories {
+    text-align: left;
+}
+
+.footer__ul {
+    list-style: none;
+}
+
+.header__search-input {
+    flex: 1;
+}
