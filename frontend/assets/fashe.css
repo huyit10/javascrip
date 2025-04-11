@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .header__navbar {
     position: relative;
     list-style: none;
@@ -13,8 +17,15 @@
 
 }
 
+.header__navbar-item1 {
+    font-size: 30px;
+    margin-left: 40px;
+
+}
+
 .header__navbar2 {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     /* 3 cột trái - giữa - phải */
     align-items: center;
@@ -25,7 +36,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 20px;
+    gap: 40px;
     /* Tạo khoảng cách giữa các mục */
     align-items: center;
 }
@@ -83,113 +94,114 @@
 }
 
 /* ===== CATEGORY SECTION ===== */
-.grid-containerr {
+.grid-category {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
-    background-color: rgb(242, 243, 244);
+    background-color: white;
     padding: 10px;
-    justify-content: center;
-    margin-top: 30px;
+    margin: 10px 150px 10px 150px;
 }
 
-.grid-container>div {
+.grid-category>div {
     background-color: #f1f1f1;
-    text-align: center;
+    color: #000;
     padding: 10px;
-    font-size: 10px;
+    font-size: 5px;
+    text-align: center;
+
 }
 
-.item6 {
-    max-width: 170px;
+.grid-category .item6 {
+    padding: 70px;
 }
 
-.item1 .btn {
+.category-btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
-    font-size: 16px;
-    padding: 16px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
+    margin: 150px 0px 0px 70px;
 }
-
 
 /* ===== FEATURED PRODUCTS ===== */
-H1 {
-    text-align: center;
-}
-
-.flex-containerrr {
-    display: flex;
-    background-color: rgb(231, 235, 240);
-    justify-content: center;
+.grid-featured {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     gap: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 150px 10px 150px;
 }
 
-.flex-container>div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
+.grid-featured>div {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
 }
 
 /* ===== LOOKBOOK SECTION ===== */
 
-.flex-containerrrr {
+.lookbook {
     display: flex;
-    background-color: rgb(178, 183, 189);
+    background-color: rgb(200, 206, 213);
     justify-content: center;
-    gap: 20px;
+    height: 300px;
+    gap: 40px;
+
 }
 
-.flex-container>div {
+.lookbook>div {
     background-color: #f1f1f1;
     margin: 10px;
     padding: 20px;
+    float: left;
+
+}
+
+.lookbook-one>h3 {
+    position: absolute;
+    margin: 50px 3px 5px 40px;
+    color: white;
+}
+
+.lookbook-text {
+    opacity: 0.5;
+    position: absolute;
+}
+
+.lookbook-one>h2 {
+    position: absolute;
+    margin: 180px 10px 5px 0px;
+    color: white;
 
 }
 
 /* =====  OUR BLOG  ===== */
-.blog {
-
-    div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        /* float: left; */
-        width: 180px;
-        margin-left: 150px;
-    }
-
-    div.gallery:hover {
-        border: 1px solid #777;
-    }
-
-    div.gallery img {
-        width: 100%;
-        height: auto;
-    }
-
-    div.desc {
-        padding: 15px;
-        text-align: left;
-    }
+.grid-blog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
 }
 
+.grid-blog>div {
+    color: rgb(101, 75, 75);
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.grid-blog img {
+    margin: 10px 150px 10px 150px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
 
 /* ===== INSTAGRAM SECTION ===== */
 .flex-instagram {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    /* display: flex;
-flex-wrap: nowrap; */
-    background-color: rgb(150, 174, 199);
+    background-color: white;
     justify-content: center;
+    gap: 20px;
 }
 
 .flex-instagram>div {
@@ -199,6 +211,10 @@ flex-wrap: nowrap; */
     margin: 1px;
     text-align: center;
     line-height: 75px;
+}
+
+.intstagram-h1 {
+    text-align: center;
 }
 
 /* ===== SERVICE HIGHLIGHTS ===== */
@@ -236,7 +252,7 @@ flex-wrap: nowrap; */
 .footer>div {
     background-color: #f1f1f1;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     /* text-align: left; */
 }
 
@@ -262,18 +278,12 @@ flex-wrap: nowrap; */
     text-align: left;
 }
 
-.item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: left;
-}
-
 .footer__icon-bottom {
     text-align: center;
     list-style: none;
 }
 
-.item7 {
+.item77 {
     grid-column-start: 1;
     grid-column-end: 7;
 }
@@ -289,4 +299,8 @@ flex-wrap: nowrap; */
 
 .footer__ul {
     list-style: none;
+}
+
+.header__search-input {
+    flex: 1;
 }
